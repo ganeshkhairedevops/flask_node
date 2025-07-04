@@ -26,7 +26,7 @@
                 lastName: document.getElementById('lastName').value
             };
 
-            const response = await fetch('http://0.0.0.0:5000/submit', {
+            const response = await fetch('http://localhost:5000/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
